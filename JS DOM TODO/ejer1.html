@@ -1,0 +1,25 @@
+<html>
+<body>
+<script>
+  var p1 = document.createElement("p");
+  var newtext = document.createTextNode("Paragraph with an ");
+  var newtext2 = document.createTextNode(" word and ");
+
+  p1.appendChild(newtext);
+
+  var em     = document.createElement("em");
+  var emText = document.createTextNode("emphasized");
+  em.appendChild(emText);
+  p1.appendChild(em);
+  p1.appendChild(newtext2);
+
+  var strong     = document.createElement("strong");
+  var strongText = document.createTextNode("others more emphasized");
+
+  strong.appendChild(strongText);
+  p1.appendChild(strong);
+
+  document.body.appendChild(p1);
+</script>
+</body>
+</html>

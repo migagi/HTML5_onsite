@@ -1,0 +1,16 @@
+<html>
+<body>
+  <h1> Open console in Chrome DevTools and write in the textarea, in the console as soon as they are typed.  </h1>
+  <textarea id="text" class="span6" rows="5" placeholder="What's up?" required></textarea>
+<script>
+
+function handleClick(evento){
+  console.log(evento.key);
+}
+
+var mytext= document.getElementById("text");
+mytext.addEventListener("keypress",handleClick,false);
+
+</script>
+</body>
+</html>

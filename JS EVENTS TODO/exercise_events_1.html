@@ -1,0 +1,31 @@
+<html>
+<body>
+<button id="button1">
+  <h1 id=t1> Button 1 </h1>
+</div>
+<button id="button2">
+  <h1 id=t1> Button 2 </h1>
+</div>
+<script>
+
+function handleClick(evento){
+
+  var id =this.id;
+  var text="";
+  if (id==="button1"){
+    text="Button 1 pushed";
+  } else {
+    text="Button 2 pushed";
+  }
+    alert(text);
+}
+
+var mybutton= document.getElementById("button1");
+mybutton.addEventListener("click",handleClick,false);
+
+var mybutton2= document.getElementById("button2");
+mybutton2.addEventListener("click",handleClick,false);
+
+</script>
+</body>
+</html>
